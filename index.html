@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gift City — Artisan Gifts & Décor</title>
+  <meta name="description" content="Gift City — Premium decorative gift items including statues, murals, fountains, idols, and vases." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo/logo.png" alt="Gift City Logo" class="nav-logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='inline';" />
+      <span class="nav-logo-text" style="display:none;">Gift<em>City</em></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="blob blob-4"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-emblem">
+        <img src="assets/logo/logo.png" alt="Gift City" class="hero-logo-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="hero-emblem-fallback" style="display:none;">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 8C32 8 20 18 20 28c0 6 5 10 12 10s12-4 12-10C44 18 32 8 32 8Z" opacity="0.75"/>
+            <path d="M18 24C18 24 8 28 10 36c1.5 6 8 8 14 6s8-8 6-14C28 22 18 24 18 24Z" opacity="0.5"/>
+            <path d="M46 24C46 24 56 28 54 36c-1.5 6-8 8-14 6s-8-8-6-14C36 22 46 24 46 24Z" opacity="0.5"/>
+            <rect x="29" y="36" width="6" height="16" rx="2"/>
+            <rect x="21" y="49" width="22" height="4" rx="2"/>
+          </svg>
+        </div>
+      </div>
+      <p class="hero-tagline">Since 2008 · Curated Artisan Gifts</p>
+      <h1 class="hero-title">Gift <em>City</em></h1>
+      <p class="hero-desc">Where artistry meets meaning — discover handcrafted statues, serene fountains, devotional idols, dramatic murals, and elegant vases for every space and occasion.</p>
+      <a href="catalogue.html" class="btn-primary">Explore Catalogue <span class="arrow">→</span></a>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </a>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-inner">
+      <span class="section-label reveal">Our Story</span>
+      <h2 class="section-title reveal">Crafted with <em>Care</em>,<br>Gifted with <em>Love</em></h2>
+      <div class="ornament-divider reveal">✦</div>
+      <p class="about-text reveal"><strong>Gift City</strong> was born from a simple belief — that a truly beautiful object can transform any space, spark joy, and carry deep meaning. Founded in the heart of the city, we curate premium decorative pieces that blend traditional craftsmanship with contemporary aesthetics.</p>
+      <p class="about-text reveal">Each piece in our collection is hand-selected for its <strong>artistry, quality, and soul</strong> — from hand-cast bronze idols and cascading stone fountains to hand-painted murals and delicate ceramic vases.</p>
+      <div class="about-stats reveal-stagger reveal">
+        <div class="stat-item"><div class="stat-number" data-target="25" data-suffix="+">25+</div><div class="stat-label">Years of Excellence</div></div>
+        <div class="stat-item"><div class="stat-number" data-target="1000+" data-suffix="+">1000+</div><div class="stat-label">Unique Pieces</div></div>
+        <div class="stat-item"><div class="stat-number" data-target="10000+" data-suffix="+">10000+</div><div class="stat-label">Happy Customers</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features-grid reveal-stagger">
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 32 32"><path d="M16 4L6 10L6 22L16 28L26 22L26 10Z" stroke-width="1.5" fill="none" stroke="currentColor"/><circle cx="16" cy="16" r="5"/></svg></div>
+        <h3 class="feature-title">Handpicked Quality</h3>
+        <p class="feature-desc">Every piece individually selected for superior craftsmanship, finish, and lasting beauty.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 32 32"><path d="M16 3C16 3 5 10 5 18C5 23.5 9.5 28 16 28C22.5 28 27 23.5 27 18C27 10 16 3 16 3Z"/></svg></div>
+        <h3 class="feature-title">Gifting Made Easy</h3>
+        <p class="feature-desc">Expert wrapping and curated gift sets for birthdays, weddings, housewarmings and more.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 32 32"><rect x="6" y="14" width="20" height="14" rx="2"/><path d="M10 14C10 10 13 6 16 6C19 6 22 10 22 14"/><circle cx="16" cy="20" r="2.5"/></svg></div>
+        <h3 class="feature-title">Safe & Secure</h3>
+        <p class="feature-desc">Careful packaging ensures your treasured gifts arrive in perfect condition, every time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" id="visit">
+    <span class="section-label reveal">Find Us</span>
+    <h2 class="section-title reveal">Visit Our <em>Showroom</em></h2>
+    <p class="card-intro reveal">Click the card to see our contact details and plan your visit.</p>
+    <div class="flip-card reveal reveal-scale">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="card-front-icon"><svg viewBox="0 0 48 48"><path d="M24 6C24 6 10 16 10 26C10 33 16 40 24 40C32 40 38 33 38 26C38 16 24 6 24 6Z" opacity="0.85"/><path d="M24 16L24 34M16 24L32 24" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+          <div class="card-front-name">Gift City</div>
+          <p class="card-front-desc">Your premier destination for artisan decorative gifts, spiritual idols, handcrafted murals, elegant vases, and soothing fountains.</p>
+          <div class="card-hint">Tap to reveal</div>
+        </div>
+        <div class="flip-card-back">
+          <div class="back-logo">Gift City</div>
+          <ul class="contact-list">
+            <li><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><div class="contact-text"><span class="contact-label">Address</span>Shop No. 4, Artisan Market Complex,<br>MG Road, Pune — 411 001</div></li>
+            <li><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.01l-2.2 2.21z"/></svg></div><div class="contact-text"><span class="contact-label">Phone</span>+91 98765 43210</div></li>
+            <li><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div><div class="contact-text"><span class="contact-label">Email</span>hello@giftcity.in</div></li>
+          </ul>
+          <a href="catalogue.html" class="btn-catalogue">View Catalogue →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Gift City</div>
+    <p class="footer-copy">© 2024 Gift City. All rights reserved. · Crafted with ♥ in India</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
