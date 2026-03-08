@@ -1,0 +1,131 @@
+/* ── Scroll Reveal Animations ───────────────────────── */
+
+/* Initial hidden state */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.85s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.reveal-left {
+  transform: translateX(-40px);
+}
+
+.reveal.reveal-right {
+  transform: translateX(40px);
+}
+
+.reveal.reveal-scale {
+  transform: scale(0.92);
+}
+
+/* Visible state */
+.reveal.visible {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* Staggered children delays */
+.reveal-stagger > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger > *:nth-child(2) { transition-delay: 0.15s; }
+.reveal-stagger > *:nth-child(3) { transition-delay: 0.25s; }
+.reveal-stagger > *:nth-child(4) { transition-delay: 0.35s; }
+.reveal-stagger > *:nth-child(5) { transition-delay: 0.45s; }
+
+/* Hero entrance animations */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.hero-emblem    { animation: scaleIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both; }
+.hero-tagline   { animation: heroFadeUp 0.8s ease 0.4s both; }
+.hero-title     { animation: heroFadeUp 0.9s ease 0.55s both; }
+.hero-desc      { animation: heroFadeUp 0.8s ease 0.7s both; }
+.hero .btn-primary { animation: heroFadeUp 0.8s ease 0.85s both; }
+.scroll-indicator  { animation: heroFadeIn 1s ease 1.2s both; }
+
+/* Floating shimmer on gold accents */
+@keyframes goldShimmer {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.7; }
+}
+
+.gold-shimmer { animation: goldShimmer 3s ease-in-out infinite; }
+
+/* Card hover lift */
+@keyframes cardLift {
+  from { box-shadow: 0 8px 40px rgba(107,66,38,0.12); }
+  to   { box-shadow: 0 20px 60px rgba(107,66,38,0.22); }
+}
+
+/* Page transition overlay */
+.page-transition {
+  position: fixed;
+  inset: 0;
+  background: var(--brown);
+  z-index: 9999;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  pointer-events: none;
+}
+
+.page-transition.enter {
+  animation: pageEnter 0.5s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+}
+
+.page-transition.exit {
+  animation: pageExit 0.5s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+  pointer-events: all;
+}
+
+@keyframes pageEnter {
+  from { transform: scaleY(0); transform-origin: bottom; }
+  to   { transform: scaleY(1); transform-origin: bottom; }
+}
+
+@keyframes pageExit {
+  from { transform: scaleY(1); transform-origin: top; }
+  to   { transform: scaleY(0); transform-origin: top; }
+}
+
+/* Pulse ring */
+@keyframes pulseRing {
+  0%   { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.pulse-ring {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 2px solid var(--gold-light);
+  animation: pulseRing 2.5s ease-out infinite;
+}
+
+/* Number count-up animation flash */
+@keyframes numberReveal {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.stat-number.counted {
+  animation: numberReveal 0.6s ease forwards;
+}
+
+/* Subtle text underline draw */
+@keyframes underlineDraw {
+  from { width: 0; }
+  to   { width: 100%; }
+}
