@@ -34,7 +34,7 @@ body {
 
 /* ── Typography ─────────────────────────────────────── */
 h1, h2, h3, h4 {
-  font-family: 'Adobe Arabic', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
   line-height: 1.15;
 }
@@ -232,8 +232,8 @@ nav.scrolled {
 }
 
 .hero-title em {
-  font-style: italic;
-  color: var(--gold-dark);
+  font-style: normal;
+  color: var(--brown);
 }
 
 .hero-desc {
