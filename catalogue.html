@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogue — Gift City</title>
+  <meta name="description" content="Browse Gift City's full collection of statues, fountains, idols, murals, and vases." />
+  <link rel="stylesheet" href="css/catalogue.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body>
+
+  <!-- ══ Navigation ════════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo/logo.png" alt="Gift City Logo" class="nav-logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='inline';" />
+      <span class="nav-logo-text" style="display:none;">Gift<em>City</em></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#visit">Visit</a></li>
+      <li><a href="catalogue.html" class="active">Catalogue</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══ Catalogue Hero ════════════════════════════════ -->
+  <section class="cat-hero">
+    <div class="cat-hero-bg-blob"></div>
+    <div class="cat-hero-bg-blob"></div>
+    <span class="section-label">Our Collections</span>
+    <h1>Explore the <em>Catalogue</em></h1>
+    <p>Five curated categories of handcrafted décor — each piece a story waiting to live in your space.</p>
+  </section>
+
+  <!-- ══ Category Nav Tabs ══════════════════════════════ -->
+  <div class="cat-tab-bar">
+    <button class="cat-tab active" data-target="statues">
+      <span class="tab-icon">🏛️</span> Statues
+    </button>
+    <button class="cat-tab" data-target="fountains">
+      <span class="tab-icon">⛲</span> Fountains
+    </button>
+    <button class="cat-tab" data-target="idols">
+      <span class="tab-icon">🪔</span> Idols
+    </button>
+    <button class="cat-tab" data-target="murals">
+      <span class="tab-icon">🖼️</span> Murals
+    </button>
+    <button class="cat-tab" data-target="vases">
+      <span class="tab-icon">🏺</span> Vases
+    </button>
+  </div>
+
+  <!-- ══ Catalogue Sections ════════════════════════════ -->
+  <main class="catalogue-main">
+
+    <!-- ── STATUES ──────────────────────────────────── -->
+    <section class="cat-section active" id="statues">
+      <div class="cat-section-header reveal">
+        <div class="cat-section-title-wrap">
+          <span class="section-label">Collection 01</span>
+          <h2 class="cat-section-title">Statues</h2>
+          <p class="cat-section-desc">Classical &amp; contemporary hand-cast figures in resin, stone, and bronze — for indoor and outdoor spaces.</p>
+        </div>
+        <div class="photo-count-badge" id="statues-count">0 pieces</div>
+      </div>
+
+      <!--
+      ╔══════════════════════════════════════════════════════╗
+      ║  HOW TO ADD YOUR STATUES PHOTOS                      ║
+      ║  1. Put your image files in:                         ║
+      ║     images/catalogue/statues/                        ║
+      ║  2. Supported formats: .jpg .jpeg .png .webp         ║
+      ║  3. Copy the block below and paste it, updating      ║
+      ║     src="..." and data-title="..." for each photo.   ║
+      ║  4. You can add as many blocks as you like (20+).    ║
+      ╚══════════════════════════════════════════════════════╝
+      -->
+      <div class="photo-grid" id="statues-grid">
+
+        <!-- EXAMPLE PHOTO BLOCK — duplicate this for each photo -->
+        <div class="photo-card" data-category="statues" data-index="0">
+          <img src="images/catalogue/statues/statue-01.jpg"
+               alt="Statue 1"
+               data-title="Marble Buddha"
+               data-desc="Hand-carved Carrara marble, 18 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay">
+            <span class="photo-card-label">Marble Buddha</span>
+            <span class="photo-zoom-icon">⊕</span>
+          </div>
+          <div class="img-placeholder-msg">📁 statue-01.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="statues" data-index="1">
+          <img src="images/catalogue/statues/statue-02.jpg" alt="Statue 2"
+               data-title="Bronze Warrior" data-desc="Lost-wax cast bronze, 24 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Bronze Warrior</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 statue-02.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="statues" data-index="2">
+          <img src="images/catalogue/statues/statue-03.jpg" alt="Statue 3"
+               data-title="Dancing Figure" data-desc="Resin with gold finish, 14 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Dancing Figure</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 statue-03.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="statues" data-index="3">
+          <img src="images/catalogue/statues/statue-04.jpg" alt="Statue 4"
+               data-title="Classical Bust" data-desc="Cold-cast stone, 12 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Classical Bust</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 statue-04.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="statues" data-index="4">
+          <img src="images/catalogue/statues/statue-05.jpg" alt="Statue 5"
+               data-title="Garden Angel" data-desc="Weatherproof resin, 30 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Garden Angel</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 statue-05.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="statues" data-index="5">
+          <img src="images/catalogue/statues/statue-06.jpg" alt="Statue 6"
+               data-title="Reclining Lion" data-desc="Stone finish resin, 20 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Reclining Lion</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 statue-06.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="statues" data-index="6">
+          <img src="images/catalogue/statues/statue-07.jpg" alt="Statue 7"
+               data-title="Abstract Form" data-desc="Polished resin, 16 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Abstract Form</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 statue-07.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="statues" data-index="7">
+          <img src="images/catalogue/statues/statue-08.jpg" alt="Statue 8"
+               data-title="Terracotta Warrior" data-desc="Hand-painted terracotta, 18 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Terracotta Warrior</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 statue-08.jpg</div>
+        </div>
+
+        <!-- Add more photo blocks here following the same pattern -->
+        <!-- statue-09.jpg, statue-10.jpg ... statue-25.jpg etc. -->
+
+      </div><!-- /statues-grid -->
+
+      <div class="add-more-hint">
+        <p>📂 Add more photos to <code>images/catalogue/statues/</code> and copy a photo block above.</p>
+      </div>
+    </section>
+
+    <!-- ── FOUNTAINS ─────────────────────────────────── -->
+    <section class="cat-section" id="fountains">
+      <div class="cat-section-header reveal">
+        <div class="cat-section-title-wrap">
+          <span class="section-label">Collection 02</span>
+          <h2 class="cat-section-title">Fountains</h2>
+          <p class="cat-section-desc">Tiered stone and resin water features that bring tranquility and elegance to any corner.</p>
+        </div>
+        <div class="photo-count-badge" id="fountains-count">0 pieces</div>
+      </div>
+
+      <div class="photo-grid" id="fountains-grid">
+
+        <div class="photo-card" data-category="fountains" data-index="0">
+          <img src="images/catalogue/fountains/fountain-01.jpg" alt="Fountain 1"
+               data-title="3-Tier Garden Fountain" data-desc="Sandstone finish, 36 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">3-Tier Garden Fountain</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 fountain-01.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="fountains" data-index="1">
+          <img src="images/catalogue/fountains/fountain-02.jpg" alt="Fountain 2"
+               data-title="Zen Wall Fountain" data-desc="Slate finish, 24 × 36 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Zen Wall Fountain</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 fountain-02.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="fountains" data-index="2">
+          <img src="images/catalogue/fountains/fountain-03.jpg" alt="Fountain 3"
+               data-title="Lotus Bowl Fountain" data-desc="Resin &amp; pebble, 18 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Lotus Bowl Fountain</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 fountain-03.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="fountains" data-index="3">
+          <img src="images/catalogue/fountains/fountain-04.jpg" alt="Fountain 4"
+               data-title="Bamboo Pour Fountain" data-desc="Ceramic &amp; bamboo, 20 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Bamboo Pour Fountain</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 fountain-04.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="fountains" data-index="4">
+          <img src="images/catalogue/fountains/fountain-05.jpg" alt="Fountain 5"
+               data-title="Waterfall Rock Fountain" data-desc="Fibreglass rock, 48 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Waterfall Rock Fountain</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 fountain-05.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="fountains" data-index="5">
+          <img src="images/catalogue/fountains/fountain-06.jpg" alt="Fountain 6"
+               data-title="Indoor Tabletop Fountain" data-desc="Ceramic, 10 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Indoor Tabletop Fountain</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 fountain-06.jpg</div>
+        </div>
+
+        <!-- Add more: fountain-07.jpg, fountain-08.jpg ... -->
+
+      </div>
+
+      <div class="add-more-hint">
+        <p>📂 Add more photos to <code>images/catalogue/fountains/</code> and copy a photo block above.</p>
+      </div>
+    </section>
+
+    <!-- ── IDOLS ──────────────────────────────────────── -->
+    <section class="cat-section" id="idols">
+      <div class="cat-section-header reveal">
+        <div class="cat-section-title-wrap">
+          <span class="section-label">Collection 03</span>
+          <h2 class="cat-section-title">Idols</h2>
+          <p class="cat-section-desc">Sacred devotional figures in brass, bronze, and marble — crafted with reverence and care.</p>
+        </div>
+        <div class="photo-count-badge" id="idols-count">0 pieces</div>
+      </div>
+
+      <div class="photo-grid" id="idols-grid">
+
+        <div class="photo-card" data-category="idols" data-index="0">
+          <img src="images/catalogue/idols/idol-01.jpg" alt="Idol 1"
+               data-title="Ganesha — Brass" data-desc="Hand-cast brass, 12 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Ganesha — Brass</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 idol-01.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="idols" data-index="1">
+          <img src="images/catalogue/idols/idol-02.jpg" alt="Idol 2"
+               data-title="Lakshmi — Bronze" data-desc="Lost-wax bronze, 10 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Lakshmi — Bronze</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 idol-02.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="idols" data-index="2">
+          <img src="images/catalogue/idols/idol-03.jpg" alt="Idol 3"
+               data-title="Nataraja — Antique" data-desc="Antique brass finish, 18 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Nataraja — Antique</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 idol-03.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="idols" data-index="3">
+          <img src="images/catalogue/idols/idol-04.jpg" alt="Idol 4"
+               data-title="Buddha — White Marble" data-desc="Hand-carved marble, 14 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Buddha — White Marble</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 idol-04.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="idols" data-index="4">
+          <img src="images/catalogue/idols/idol-05.jpg" alt="Idol 5"
+               data-title="Shiva Lingam" data-desc="Black granite, 8 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Shiva Lingam</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 idol-05.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="idols" data-index="5">
+          <img src="images/catalogue/idols/idol-06.jpg" alt="Idol 6"
+               data-title="Saraswati — Brass" data-desc="Handcrafted brass, 16 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Saraswati — Brass</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 idol-06.jpg</div>
+        </div>
+
+        <!-- Add more: idol-07.jpg ... -->
+
+      </div>
+
+      <div class="add-more-hint">
+        <p>📂 Add more photos to <code>images/catalogue/idols/</code> and copy a photo block above.</p>
+      </div>
+    </section>
+
+    <!-- ── MURALS ─────────────────────────────────────── -->
+    <section class="cat-section" id="murals">
+      <div class="cat-section-header reveal">
+        <div class="cat-section-title-wrap">
+          <span class="section-label">Collection 04</span>
+          <h2 class="cat-section-title">Murals</h2>
+          <p class="cat-section-desc">Wall art that transforms blank spaces into breathtaking panoramas — hand-painted and relief-carved.</p>
+        </div>
+        <div class="photo-count-badge" id="murals-count">0 pieces</div>
+      </div>
+
+      <div class="photo-grid" id="murals-grid">
+
+        <div class="photo-card photo-card-wide" data-category="murals" data-index="0">
+          <img src="images/catalogue/murals/mural-01.jpg" alt="Mural 1"
+               data-title="Rajasthani Village Scene" data-desc="Hand-painted on canvas, 48 × 24 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Rajasthani Village Scene</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 mural-01.jpg</div>
+        </div>
+
+        <div class="photo-card photo-card-wide" data-category="murals" data-index="1">
+          <img src="images/catalogue/murals/mural-02.jpg" alt="Mural 2"
+               data-title="Tree of Life Relief" data-desc="MDF relief, hand-painted, 36 × 48 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Tree of Life Relief</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 mural-02.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="murals" data-index="2">
+          <img src="images/catalogue/murals/mural-03.jpg" alt="Mural 3"
+               data-title="Floral Mandala" data-desc="Gold foil on black, 24 × 24 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Floral Mandala</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 mural-03.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="murals" data-index="3">
+          <img src="images/catalogue/murals/mural-04.jpg" alt="Mural 4"
+               data-title="Peacock Panel" data-desc="Teak wood carving, 30 × 48 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Peacock Panel</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 mural-04.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="murals" data-index="4">
+          <img src="images/catalogue/murals/mural-05.jpg" alt="Mural 5"
+               data-title="Abstract Gold Leaf" data-desc="Mixed media, 36 × 36 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Abstract Gold Leaf</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 mural-05.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="murals" data-index="5">
+          <img src="images/catalogue/murals/mural-06.jpg" alt="Mural 6"
+               data-title="City Silhouette" data-desc="Laser-cut metal, 48 × 24 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">City Silhouette</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 mural-06.jpg</div>
+        </div>
+
+        <!-- Add more: mural-07.jpg ... -->
+
+      </div>
+
+      <div class="add-more-hint">
+        <p>📂 Add more photos to <code>images/catalogue/murals/</code> and copy a photo block above.</p>
+      </div>
+    </section>
+
+    <!-- ── VASES ──────────────────────────────────────── -->
+    <section class="cat-section" id="vases">
+      <div class="cat-section-header reveal">
+        <div class="cat-section-title-wrap">
+          <span class="section-label">Collection 05</span>
+          <h2 class="cat-section-title">Vases</h2>
+          <p class="cat-section-desc">Hand-thrown and painted ceramic, terracotta, and glass vases in heirloom patterns and contemporary silhouettes.</p>
+        </div>
+        <div class="photo-count-badge" id="vases-count">0 pieces</div>
+      </div>
+
+      <div class="photo-grid" id="vases-grid">
+
+        <div class="photo-card" data-category="vases" data-index="0">
+          <img src="images/catalogue/vases/vase-01.jpg" alt="Vase 1"
+               data-title="Indigo Blue Ceramic" data-desc="Wheel-thrown, hand-glazed, 16 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Indigo Blue Ceramic</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 vase-01.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="vases" data-index="1">
+          <img src="images/catalogue/vases/vase-02.jpg" alt="Vase 2"
+               data-title="Terracotta Jug" data-desc="Traditional hand-painted, 14 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Terracotta Jug</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 vase-02.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="vases" data-index="2">
+          <img src="images/catalogue/vases/vase-03.jpg" alt="Vase 3"
+               data-title="Gold Lustre Vase" data-desc="Porcelain with 24k gold detail, 12 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Gold Lustre Vase</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 vase-03.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="vases" data-index="3">
+          <img src="images/catalogue/vases/vase-04.jpg" alt="Vase 4"
+               data-title="Amphora — Cream" data-desc="Stoneware, matte glaze, 18 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Amphora — Cream</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 vase-04.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="vases" data-index="4">
+          <img src="images/catalogue/vases/vase-05.jpg" alt="Vase 5"
+               data-title="Floral Etched Glass" data-desc="Hand-etched blown glass, 10 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Floral Etched Glass</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 vase-05.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="vases" data-index="5">
+          <img src="images/catalogue/vases/vase-06.jpg" alt="Vase 6"
+               data-title="Raku Fired Vase" data-desc="Raku ceramic technique, 8 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Raku Fired Vase</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 vase-06.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="vases" data-index="6">
+          <img src="images/catalogue/vases/vase-07.jpg" alt="Vase 7"
+               data-title="Cobalt Set of 3" data-desc="Soda-fired ceramic, 6–12 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Cobalt Set of 3</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 vase-07.jpg</div>
+        </div>
+
+        <div class="photo-card" data-category="vases" data-index="7">
+          <img src="images/catalogue/vases/vase-08.jpg" alt="Vase 8"
+               data-title="Hammered Brass Vase" data-desc="Hand-hammered brass, 14 inch"
+               onerror="this.parentElement.classList.add('img-missing')" />
+          <div class="photo-card-overlay"><span class="photo-card-label">Hammered Brass Vase</span><span class="photo-zoom-icon">⊕</span></div>
+          <div class="img-placeholder-msg">📁 vase-08.jpg</div>
+        </div>
+
+        <!-- Add more: vase-09.jpg ... -->
+
+      </div>
+
+      <div class="add-more-hint">
+        <p>📂 Add more photos to <code>images/catalogue/vases/</code> and copy a photo block above.</p>
+      </div>
+    </section>
+
+  </main><!-- /catalogue-main -->
+
+  <!-- ══ LIGHTBOX ═══════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+      <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous photo">‹</button>
+      <button class="lightbox-next" id="lightbox-next" aria-label="Next photo">›</button>
+
+      <div class="lightbox-img-wrap">
+        <img src="" alt="" id="lightbox-img" />
+        <div class="lightbox-spinner" id="lightbox-spinner"></div>
+      </div>
+
+      <div class="lightbox-info">
+        <div class="lightbox-title" id="lightbox-title"></div>
+        <div class="lightbox-desc" id="lightbox-desc"></div>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+      </div>
+
+      <div class="lightbox-thumbs" id="lightbox-thumbs"></div>
+    </div>
+  </div>
+
+  <!-- ══ Footer ════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-logo">Gift City</div>
+    <p class="footer-copy">© 2024 Gift City. All rights reserved. · Crafted with ♥ in India</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
